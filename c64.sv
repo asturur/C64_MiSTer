@@ -1227,6 +1227,7 @@ always @(posedge CLK_VIDEO) begin
 		if(HDMI_HEIGHT == 800)  begin vcrop <= 200; wide <= vcrop_en; end
 		if(HDMI_HEIGHT == 1080) vcrop <= 10'd216;
 		if(HDMI_HEIGHT == 1200) vcrop <= 240;
+		if(HDMI_HEIGHT == 1440) vcrop <= 200;
 	end
 end
 
